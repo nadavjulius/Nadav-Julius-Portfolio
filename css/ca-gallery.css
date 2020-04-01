@@ -123,10 +123,10 @@ body {
 
 @media (min-width: 575px) {
     .offcanvas-btn-open {
-        margin-right: 60vw;
+        margin-right: 50vw;
     }
     .offcanvas-aside {
-        width: 40vw;
+        width: 50vw;
         right: -60vw;
     }
 }
