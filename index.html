@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nadav Julius | BlackCoffeeProductions</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/ca-gallery.css" rel="stylesheet">
+  <link rel="icon" href="img/logos/download.jpg" />
+
+</head>
+
+<body id="page-top">
+  <div class="modal-cover-nadav" onClick="openCanvas()"></div>
+  <div class="offcanvas-btn" onClick="openCanvas()">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+  </div>
+  <aside class="offcanvas-aside">
+
+
+    <section class="modal-wrapper mb-4">
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+      <p class="text-center w-responsive mx-auto mb-5 contact-subtitle-nadav">Do you have any questions? Please do not
+        hesitate to contact me
+        directly. I'll get back to you as soon as possible!</p>
+
+      <div class="row flex-align-center">
+        <div class="col-md-9 mb-md-0 mb-5 ">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0" style="display: flex; justify-content: space-between; padding-bottom: 5px;">
+                  <label for="name" class="">Your name</label>
+                  <input type="text" id="name" name="name" class="form-control-name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0" style="display: flex; justify-content: space-between; padding-bottom: 5px;">
+                  <label for="subject" class="">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control-subject">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="2"
+                    class="form-control md-textarea"></textarea>
+                  <label for="message">Your message</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="text-center text-md-left">
+            <button type="button" class="btn btn-primary" onclick="submitEmail()">Submit</button>
+          </div>
+          <div class="status"></div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+    <!--Section: Contact v.2-->
+
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Nadav Julius</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact" onClick="openCanvas()">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To my Portfolio</div>
+        <div class="intro-heading">It's Nice To Meet You</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#services">Get To Know Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Specialities</h2>
+          <h3 class="section-subheading text-muted">Anything and everything WEB | Fullstack web developer</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Responsive Design</h4>
+          <p class="text-muted">All of my applications are fully responsive - mobile first- designs.
+            They look just as good if not better on mobile. </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Advanced Frameworks</h4>
+          <p class="text-muted">Using the latest web technologies such as Vue.js,
+            React, Angular and Node.js.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-server fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Server Side</h4>
+          <p class="text-muted">APIs and REST with PHP &amp; Node.JS.
+            Aswell as database's using MySQL and MongoDB.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading text-muted">for more projects and/or to see code
+            my contact details are listed below</h3>
+        </div>
+      </div>
+      <div class="row portfolio-container">
+  </section>
+
+
+  <!-- Me -->
+  <section class="bg-light nadav-about-me" id="me">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+          <h4>Nadav Julius</h4>
+          <p class="text-muted">Hustler | Fixer | Developer | Dreamer</p>
+          <ul class="list-inline social-buttons" style="margin-bottom: 15px;">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/nadav_julius/">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/Juliusuprising">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+              href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3B0hklEgrVTE2dgfgSXhUL0g%3D%3D">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="/files/Resume - Nadav Julius - 040120.pdf" style="font-weight: 600; font-size: 20px;" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="col-sm-8 flex-align-center">
+        <p class="large text-muted  about-description">Hi, I'm a Junior Full Stack Web Developer, passionate
+          about solving challenges. With experience in writing powrful, responsive applications using
+          WEB technologies such as Node.js, Vue.js, Vuex, React, Redux, Angular and MongoDb. <br>
+          Graduate of the <a href="https://www.coding-academy.org/">Coding Academy</a> - An intensive coding bootcamp
+          (640 hours) that qualifies
+          Full Stack developers. <br>
+          Former team leader & project manager in multiple industries. Looking for a company where i can
+          launch my budding development career!
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row" style="justify-content: center;">
+        <!-- <div class="col-md-4 flex-align-center">
+          <a href="#" target="_blank">
+            <img src="./img/logos/logo.png" alt="">
+          </a>
+        </div> -->
+        <div class="row-md-8 flex-align-center">
+          <ul class="list-unstyled mb-0 row">
+            <li><i class="fa fa-map-pin mt-4 fa-2x"></i>
+              <p>Location... Unknown &emsp;</p>
+            </li>
+            <li><i class="fa fa-phone mt-4 fa-2x"></i>
+              <p class="nadav-call-me">&emsp; <a href="tel:+97253737-5880">Call: +972(53)737-5880</a> &emsp;</p>
+              <p class="nadav-call-me">&emsp; <a href="tel:+14058876184">Whatsapp: +1(405)887-6184</a> &emsp;</p>
+            </li>
+            <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+              <p>&emsp; nadavjulius@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+
+  <div class="project-modal-container"></div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/ca-gallery.js"></script>
+  <script src="js/offCanvas.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
